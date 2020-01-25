@@ -27,6 +27,6 @@ bool halfFull(Cup cup, double mls);
 
 double pricePerMl(Cup & cup, double pricePerDrink);
 
-bool fitInCuboard(Cup * cup, double height, double width);
+bool fitInCupboard(Cup * cup, double height, double width);
 
 #endif //APEXLAB_APEX_CODE_H

@@ -58,6 +58,6 @@ int main()
 
     (void)testNear(189.3365, pricePerMl(cup, 3.25));
 
-    (void)test<bool>(false, fitInCuboard(&cup, 10.0, 5.0));
+    (void)test<bool>(false, fitInCupboard(&cup, 10.0, 5.0));
     return 0;
 }
