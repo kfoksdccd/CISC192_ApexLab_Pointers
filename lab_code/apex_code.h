@@ -25,7 +25,7 @@ struct Cup
 
 bool halfFull(Cup cup, double mls);
 
-double pricePerMl(Cup & cup, double pricePerDrink);
+double mlPerDollar(Cup & cup, double pricePerDrink);
 
 bool fitInCupboard(Cup * cup, double height, double width);
 
