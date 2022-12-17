@@ -50,10 +50,15 @@ int main()
     Cup twoCup(2, 1, 1);
     Cup cup(5.3, 4.0, 9.0);
 
+    Cup* cupPtr = new Cup(twoCup);
+
     (void)testNear(3.1415, unitCup.capacityInMls());
     (void)testNear(615.3437, cup.capacityInMls());
     (void)testNear(7.3303, twoCup.capacityInMls());
 
+    cupPtr->HeightCms = 2;
+    (void)testNear(14.6608, cupPtr->capacityInMls());
+  
     (void)test<bool>(true, halfFull(cup, 400));
 
     (void)testNear(189.3365, mlPerDollar(cup, 3.25));
